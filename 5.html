@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="car.png">
+    <title>عبد الرحمن فهيد الحربى</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body{
+        direction: rtl;
+    }
+</style>
+<body>
+    <header>
+        <h1>صفحة مع jQuery</h1>
+    </header>
+
+    <section>
+        <h2>اختبار jQuery</h2>
+        <button id="toggleButton">إخفاء/إظهار النص</button>
+        <p id="hiddenText" style="display: none;">هذا النص يمكن إخفاؤه وإظهاره باستخدام jQuery.</p>
+    </section>
+    
+    <script>
+        $(document).ready(function() {
+            $("#toggleButton").click(function() {
+                $("#hiddenText").toggle();
+            });
+        });
+    </script>
+    
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023</p>
+    </footer>
+</body>
+</html>
